@@ -16,7 +16,7 @@
         android:padding="20dp">
 
         <TextView
-            android:id="@+id/workingsTV"
+            android:id="@+id/TvShow"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="VALUES"
@@ -26,14 +26,14 @@
             android:textAlignment="textEnd"
             android:textColor="@color/Teal"
             android:textSize="25sp"
-            app:layout_constraintBottom_toTopOf="@id/resultsTV"
+            app:layout_constraintBottom_toTopOf="@id/TvResult"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
 
         <TextView
-            android:id="@+id/resultsTV"
+            android:id="@+id/TvResult"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="RESULT"
@@ -52,89 +52,105 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
     <TableRow
-        style="@style/buttonRow"
+        style="@style/TextViewRow"
         android:layout_gravity="center">
 
-        <Button
+        <TextView
 
-            style="@style/buttonNumber"
+            style="@style/TextViewNumber"
             android:textColor="@color/maroon"
-            android:onClick="allClearAction"
+            android:id="@+id/TvAc"
             android:text="AC" />
-        <Button
-            style="@style/buttonNumber"
+        <TextView
+            style="@style/TextViewNumber"
             android:textColor="@color/maroon"
-            android:onClick="backSpaceAction"
+            android:id="@+id/TvBackSpace"
             android:text="⌫"/>
-        <Button
-            style="@style/buttonOperator"
+        <TextView
+            style="@style/TextViewOperator"
+            android:id="@+id/TvDivide"
             android:text="/" />
     </TableRow>
     <TableRow
 
-        style="@style/buttonRow">
+        style="@style/TextViewRow">
 
-        <Button
-            style="@style/buttonNumber"
+        <TextView
+            style="@style/TextViewNumber"
+            android:id="@+id/TvNumber7"
             android:text="7"/>
-        <Button
-            style="@style/buttonNumber"
+        <TextView
+            style="@style/TextViewNumber"
+            android:id="@+id/TvNumber8"
             android:text="8"/>
-        <Button
-            style="@style/buttonNumber"
-            android:text="9" />
-        <Button
-            style="@style/buttonOperator"
+        <TextView
+            style="@style/TextViewNumber"
+            android:text="9"
+            android:id="@+id/TvNumber9"
+            />
+        <TextView
+            style="@style/TextViewOperator"
+            android:id="@+id/TvMul"
             android:text="x"/>
     </TableRow>
     <TableRow
-        style="@style/buttonRow" >
+        style="@style/TextViewRow" >
 
-        <Button
-            style="@style/buttonNumber"
+        <TextView
+            style="@style/TextViewNumber"
+            android:id="@+id/TvNumber4"
             android:text="4"/>
-        <Button
-            style="@style/buttonNumber"
+        <TextView
+            style="@style/TextViewNumber"
+            android:id="@+id/TvNumber5"
             android:text="5"/>
-        <Button
-            style="@style/buttonNumber"
+        <TextView
+            style="@style/TextViewNumber"
+            android:id="@+id/TvNumber6"
             android:text="6" />
-        <Button
-            style="@style/buttonOperator"
+        <TextView
+            style="@style/TextViewOperator"
+            android:id="@+id/TvMinus"
             android:text="-"/>
     </TableRow>
     <TableRow
-        style="@style/buttonRow" >
+        style="@style/TextViewRow" >
 
-        <Button
-            style="@style/buttonNumber"
+        <TextView
+            style="@style/TextViewNumber"
+            android:id="@+id/TvNumber1"
             android:text="1"/>
-        <Button
-            style="@style/buttonNumber"
+        <TextView
+            style="@style/TextViewNumber"
+            android:id="@+id/TvNumber2"
             android:text="2"/>
-        <Button
-            style="@style/buttonNumber"
+        <TextView
+            style="@style/TextViewNumber"
+            android:id="@+id/TvNumber3"
             android:text="3" />
-        <Button
-            style="@style/buttonOperator"
+        <TextView
+            style="@style/TextViewOperator"
+            android:id="@+id/TvPlus"
             android:text="+"/>
 
     </TableRow>
     <TableRow
-        style="@style/buttonRow" >
+        style="@style/TextViewRow" >
 
-        <Button
-            style="@style/buttonNumber"
+        <TextView
+            style="@style/TextViewNumber"
+            android:id="@+id/TvNumber"
             android:text="."/>
-        <Button
-            style="@style/buttonNumber"
+        <TextView
+            style="@style/TextViewNumber"
+            android:id="@+id/TvNumber0"
             android:text="0"/>
-        <Button
-            style="@style/buttonNumber"
+        <TextView
+            style="@style/TextViewNumber"
+            android:id="@+id/TvEqual"
             android:layout_weight="2"
             android:textColor="@color/Teal"
             android:textSize="40sp"
-            android:onClick="equalsAction"
             android:text="=" />
     </TableRow>
 </TableLayout>
